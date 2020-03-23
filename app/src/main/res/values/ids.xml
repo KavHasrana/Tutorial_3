@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <item name="btnFragment1" type="id">abc</item>
+    <item name="frgmntDefault" type="id">xyz</item>
+    <item name="btnFragmetn2" type="id">fragment2</item>
+</resources>
