@@ -8,20 +8,20 @@
     tools:context=".MainActivity">
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/fragment1"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:onClick="changeFragment"
-        android:text="FRAGMENT 1" />
+        android:text="@string/fragment_1" />
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/fragment2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="FRAGMENT 2" />
+        android:text="@string/fragment_2" />
 
     <fragment
-        android:id="@+id/fgmntDefault"
+        android:id="@+id/frgmntDefault"
         android:name="com.example.androidfragments.Fragment1"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />

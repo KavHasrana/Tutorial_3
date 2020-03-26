@@ -10,28 +10,28 @@ import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
-    private View view;
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
     }
         public void changeFragment(View view){
+
             Fragment fragment;
-            if (view == findViewById(R.id.btnFragment1)){
+
+            if (view == findViewById(R.id.fragment1)){ //Link to fragment1
                 fragment = new Fragment1();
-                FragmentManager fm = getSupportFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.frgmntDefault,fragment);
-                ft.commit();
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.frgmntDefault,fragment);
+                fragmentTransaction.commit();
             }
-            if (view == findViewById(R.id.btnFragmetn2)){
+            if (view == findViewById(R.id.fragment2)){ //Link to fragment2
                 fragment = new Fragment2();
-                FragmentManager fm = getSupportFragmentManager();
-                FragmentTransaction ft = fm.beginTransaction();
-                ft.replace(R.id.frgmntDefault,fragment);
-                ft.commit();
+                FragmentManager fragmentManager = getSupportFragmentManager();
+                FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                fragmentTransaction.replace(R.id.frgmntDefault,fragment);
+                fragmentTransaction.commit();
             }
         }
 
